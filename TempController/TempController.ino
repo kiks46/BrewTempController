@@ -222,7 +222,7 @@ String getDisplayTemperature( float tempF ){
     }
     else{
       float tempF = DallasTemperature::toCelsius( tempF );
-      strTemp = String(tempF);
+      strTemp = String(tempC);
     }
     strTemp = strTemp.substring( 0, 4 );
     return strTemp;
